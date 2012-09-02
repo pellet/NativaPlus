@@ -110,7 +110,7 @@
 		[iStream retain];
 		[oStream retain];
 		time_t startTime = time(NULL) * 1000;
-		time_t timeout = 1000;
+		time_t timeout = 9999;
 		do {
 			[[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
 			if ((time(NULL) * 1000 - startTime)>timeout)
