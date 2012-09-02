@@ -25,7 +25,7 @@ set arguments "[lindex $argv 0] -v"
 set path $argv0
 
 #kill previous command
-exec $path/../KillTunnel.sh $arguments
+exec $path/../KillTunnel.sh $arguments 2> /dev/null
 
 eval spawn $arguments
 
